@@ -13,8 +13,8 @@ PRODUCT = "BTC-USD"          # Coinbase product (USD)
 GRANULARITY = 60             # 60 seconds = 1 minute candles
 STATE_FILE = "btc_state.json"
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "PASTE TELEGRAM BOT TOKEN HERE")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "PASTE TELEGRAM CHAT ID HERE")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 ALERT_COOLDOWN = 300         # seconds
 MIN_CONFIDENCE = 70          # only high-quality alerts
